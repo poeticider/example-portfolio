@@ -23,7 +23,7 @@ p {
 
 .header {
   display: flex;
-  background-color: orange;
+  background-color: orangered;
   justify-content: space-between;
 }
 
@@ -63,9 +63,35 @@ p {
 
 .banner {
   background-image: url(/assets/images/02-hero-bg.jpg);
+  background-size: cover;
+  background-color: orangered;
+  background-blend-mode: multiply;
   height: 16rem;
   width: 100%;
+  /* never been comfortable with flexbox before. I'm learning!! :D */
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
 }
+
+.banner h2 {
+  color: white;
+  background-color: orangered;
+  padding: 0.7rem;
+  margin: 1.5rem 4rem;
+}
+
+/* -------------------------------- main ---------------------------------------------------- */
+
+.page-wrapper {
+    display: grid;
+}
+
+
+
+
+
+
 
 
 /* ------------------------------------------responsive design------------------------------------------------------ */
