@@ -130,41 +130,77 @@ main {
   justify-content: center;
 }
 
+/* work background img */
 .grid-img-item {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   margin: 0rem 0.5rem 1rem 0.5rem;
+  height: 8rem;
+  width: 95%;
+  border: black solid 0.3rem;
+  background-size: cover;
+  background-color: orangered;
+  background-blend-mode: multiply;
 
   /* to make the below work, the images have to be made into background images. */
   /* background-blend-mode: multiply;
   background-color: orangered; */
 }
 
-.work-img {
-  width: 100%;
-  border: orangered solid 0.3rem;
 
-}
 
 #main-img {
   grid-area: main-img;
-
+  background-image: url("../images/WebsiteScreenshots/Portfolio\ screenshot.jpg");
+  height: 15rem;
+  width: 97.5%;
 
 }
 
+.work-background-img-child {
+  background-color: black;
+  border-right: 0.2rem solid white;
+  border-bottom: 0.2rem solid white;
+  padding: 0.5rem 2rem 0.5rem 2rem;
+  margin-top: 2.5rem;
+
+}
+
+.work-background-img-child h4 {
+  font-size: 0.7rem;
+}
+
 #work-img-main {
-  width: 90%;
+  margin-top: 4rem;
 }
 
 #grid-img-one {
   grid-area: small-img-one;
+  background-image: url("../images/WebsiteScreenshots/Online\ CV\ screenshot.jpg");
 }
 
 #grid-img-two {
   grid-area: small-img-two;
+  background-image: url("../images/WebsiteScreenshots/firefox\ mockup\ screenshot.jpg");
 }
 
+#grid-img-three {
+  grid-area: small-img-three;
+  background-image: url("../images/WebsiteScreenshots/sf6\ ref\ tool\ screenshot.jpg");
+}
+
+#grid-img-four {
+  grid-area: small-img-four;
+  background-image: url("../images/WebsiteScreenshots/rock\ paper\ scissors\ screenshot.jpg");
+}
+
+/* box within background img */
+.work-background-img-child {
+  color: orangered;
+
+
+}
 
 /* footer. **NOTE** this is a child of main. */
 

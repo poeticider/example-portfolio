@@ -56,25 +56,49 @@
         <h2>Work</h2>
       </div>
 
+      <!-- word container can probably be refactored to have one less nested div. This is a throwback to an edit to
+      add background img over <img> tags -->
+
       <div class="work-img-container">
         <div class="grid-img-item" id="main-img">
-          <img class="work-img" id="work-img-main" src="./assets/images/WebsiteScreenshots/Portfolio screenshot.jpg" alt="Portfolio Screenshot">
+          <!-- replacing img with div to make background images to add effects + h3 -->
+          <div class="work-background-img-child" id="work-img-main">
+            <h3>main</h3>
+            <h4>JS/CSS/HTML</h4>
+          </div>
+          <!-- <img class="work-img" id="work-img-main" src="./assets/images/WebsiteScreenshots/Portfolio screenshot.jpg" alt="Portfolio Screenshot"> -->
         </div>
 
         <div class="grid-img-item" id="grid-img-one">
-          <img class="work-img" src="./assets/images/WebsiteScreenshots/Online CV screenshot.jpg" alt="CV Screenshot">
+          <div class="work-background-img-child" id="cv-img">
+            <h3>one</h3>
+            <h4>JS/CSS/HTML</h4>
+          </div>
+          <!-- <img class="work-img" src="./assets/images/WebsiteScreenshots/Online CV screenshot.jpg" alt="CV Screenshot"> -->
         </div>
 
         <div class="grid-img-item" id="grid-img-two">
-          <img class="work-img" src="./assets/images/WebsiteScreenshots/firefox mockup screenshot.jpg" alt="Firefox Mockup Screenshot">
+          <div class="work-background-img-child" id="mockup-img">
+            <h3>two</h3>
+            <h4>JS/CSS/HTML</h4>
+          </div>
+          <!-- <img class="work-img" src="./assets/images/WebsiteScreenshots/firefox mockup screenshot.jpg" alt="Firefox Mockup Screenshot"> -->
         </div>
 
         <div class="grid-img-item" id="grid-img-three">
-          <img class="work-img" src="./assets/images/WebsiteScreenshots/sf6 ref tool screenshot.jpg" alt="SF6 frame data tool Screenshot">
+          <div class="work-background-img-child" id="sf6-ref-tool-img">
+            <h3>three</h3>
+            <h4>JS/CSS/HTML</h4>
+          </div>
+          <!-- <img class="work-img" src="./assets/images/WebsiteScreenshots/sf6 ref tool screenshot.jpg" alt="SF6 frame data tool Screenshot"> -->
         </div>
 
         <div class="grid-img-item" id="grid-img-four">
-          <img class="work-img" src="./assets/images/WebsiteScreenshots/rock paper scissors screenshot.jpg" alt="Rock Paper Scissors Screenshot">
+          <div class="work-background-img-child" id="rock-paper-sci-img">
+            <h3>four</h3>
+            <h4>JS/CSS/HTML</h4>
+          </div>
+          <!-- <img class="work-img" src="./assets/images/WebsiteScreenshots/rock paper scissors screenshot.jpg" alt="Rock Paper Scissors Screenshot"> -->
         </div>
 
       </div>
