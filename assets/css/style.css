@@ -35,6 +35,11 @@ p {
   align-items: center;
   justify-content: flex-end;
   width: 30%;
+  text-decoration: none;
+}
+
+.header-title-container h1 {
+  color: black;
 }
 
 .header .profile-image {
@@ -56,6 +61,13 @@ p {
 
 .nav-bar a {
   margin: 0.5rem;
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+}
+
+.nav-bar a:hover {
+  text-decoration: underline;
 
 }
 
@@ -130,32 +142,35 @@ main {
   justify-content: center;
 }
 
-/* work background img */
+/* work background images */
 .grid-img-item {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   margin: 0rem 0.5rem 1rem 0.5rem;
-  height: 8rem;
+  height: 12rem;
   width: 95%;
   border: black solid 0.3rem;
   background-size: cover;
   background-color: orangered;
   background-blend-mode: multiply;
-
-  /* to make the below work, the images have to be made into background images. */
-  /* background-blend-mode: multiply;
-  background-color: orangered; */
+  text-decoration: none;
 }
 
+.grid-img-item:hover {
+  /* background-color:rgb(255 69 0 / 0.75); */
+  background-size: 200%;
+}
 
+.grid-img-item:hover .work-background-img-child {
+  color: white;
+}
 
 #main-img {
   grid-area: main-img;
   background-image: url("../images/WebsiteScreenshots/Portfolio\ screenshot.jpg");
-  height: 15rem;
+  height: 25rem;
   width: 97.5%;
-
 }
 
 .work-background-img-child {
@@ -163,8 +178,7 @@ main {
   border-right: 0.2rem solid white;
   border-bottom: 0.2rem solid white;
   padding: 0.5rem 2rem 0.5rem 2rem;
-  margin-top: 2.5rem;
-
+  margin-top: 6rem;
 }
 
 .work-background-img-child h4 {
@@ -172,7 +186,7 @@ main {
 }
 
 #work-img-main {
-  margin-top: 4rem;
+  margin-top: 18rem;
 }
 
 #grid-img-one {
@@ -199,8 +213,8 @@ main {
 .work-background-img-child {
   color: orangered;
 
-
 }
+
 
 /* footer. **NOTE** this is a child of main. */
 
@@ -215,10 +229,20 @@ main {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   justify-content: center;
+  align-items: center;
+  margin-left: 3rem;
 }
 
 .footer-container a {
   margin: 1rem;
+  color: orangered;
+  font-weight: 600;
+  text-decoration: none;
+  
+}
+
+.footer-container a:hover {
+  text-decoration: underline;
 }
 
 
