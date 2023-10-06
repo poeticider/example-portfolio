@@ -82,11 +82,108 @@ p {
 }
 
 /* -------------------------------- main ---------------------------------------------------- */
+main {
+  width: 95%;
+}
 
 .page-wrapper {
     display: grid;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: "title-about" "title-work" "title-footer";
+    height: auto;
 }
 
+.page-section {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "title content";
+  margin: 2rem 1rem;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  border-right: 0.3rem orangered solid;
+  margin-right: 1.5rem;
+}
+
+
+.page-section h2 {
+  margin: 1rem;
+
+}
+
+.page-section p {
+  grid-area: content;
+  color: black;
+}
+
+
+.work-img-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 2fr 1fr 1fr;
+  grid-template-areas: "main-img main-img" "small-img-one small-img-two" "small-img-three small-img-four";
+  align-items: center;
+  justify-content: center;
+}
+
+.grid-img-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0rem 0.5rem 1rem 0.5rem;
+
+  /* to make the below work, the images have to be made into background images. */
+  /* background-blend-mode: multiply;
+  background-color: orangered; */
+}
+
+.work-img {
+  width: 100%;
+  border: orangered solid 0.3rem;
+
+}
+
+#main-img {
+  grid-area: main-img;
+
+
+}
+
+#work-img-main {
+  width: 90%;
+}
+
+#grid-img-one {
+  grid-area: small-img-one;
+}
+
+#grid-img-two {
+  grid-area: small-img-two;
+}
+
+
+/* footer. **NOTE** this is a child of main. */
+
+#contact {
+
+  grid-area: title-footer;
+
+}
+
+/* adds grid box for footer nav links. */
+.footer-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-content: center;
+}
+
+.footer-container a {
+  margin: 1rem;
+}
 
 
 
