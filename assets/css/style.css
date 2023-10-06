@@ -74,7 +74,7 @@ p {
 /* ------------------------------banner---------------------------------------------------- */
 
 .banner {
-  background-image: url(/assets/images/02-hero-bg.jpg);
+  background-image: url(./assets/images/02-hero-bg.jpg);
   background-size: cover;
   background-color: orangered;
   background-blend-mode: multiply;
