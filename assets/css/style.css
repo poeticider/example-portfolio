@@ -263,7 +263,10 @@ main {
     grid-template-columns: 1fr;
     grid-template-areas:
   "title-content" "content";
+  }
 
+  main {
+    width: 100%;
   }
 
   .flex-container {
@@ -274,9 +277,6 @@ main {
     margin: 1rem 0rem 2rem 0rem;
   }
 
-  .flex-container h2 {
-
-  }
 }
 
 /*----------------------- Phone ----------------------------*/
