@@ -80,7 +80,6 @@ p {
   background-blend-mode: multiply;
   height: 16rem;
   width: 100%;
-  /* never been comfortable with flexbox before. I'm learning!! :D */
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
@@ -245,22 +244,162 @@ main {
   text-decoration: underline;
 }
 
-
-
-
-
-
-
 /* ------------------------------------------responsive design------------------------------------------------------ */
 
 /* ---------------------Tablet------------------------- */
-@media only screen and (max-width: 1080px) {
+@media only screen and (max-width: 1080px) and (min-width: 601px) {
 
   .header-title-container {
     width: 40%;
   }
 
   .header .profile-image {
+    display: none;
+  }
+
+  .page-section {
+    /* margin: 2rem 0rem 2rem 0rem; */
+
+    grid-template-columns: 1fr;
+    grid-template-areas:
+  "title-content" "content";
+
+  }
+
+  .flex-container {
+    justify-content: center;
+    border-top: 0.3rem orangered solid;
+    border-bottom: 0.3rem orangered solid;
+    border-right: none;
+    margin: 1rem 0rem 2rem 0rem;
+  }
+
+  .flex-container h2 {
+
+  }
+}
+
+/*----------------------- Phone ----------------------------*/
+
+@media only screen and (max-width: 600px) {
+
+  .header {
+    flex-direction: column;
+  }
+
+  .header-title-container {
+    width: 80%;
+  }
+
+  .nav-bar {
+    flex-direction: column;
+    padding-right: 0rem;
+    text-decoration: underline;
+    text-decoration-color: white;
+  }
+
+  .banner {
+    height: 9rem;
+  }
+
+  .banner div {
+    margin: auto;
+    padding: 2rem 0rem;
+  }
+
+  .banner h2 {
+    padding: 0.5rem;
+    margin: 2rem;
+    text-align: center;
+    font-size: 1.2rem;
+  }
+
+  main {
+    width: auto;
+  }
+
+  .page-section {
+    grid-template-columns: 1fr;
+    grid-template-areas: "title-content" "content";
+    margin: 0rem;
+  }
+
+  .page-section h2 {
+    border-top: 0.3rem orangered solid;
+    border-bottom: 0.3rem orangered solid;
+    padding: 1.2rem;
+  }
+
+  .flex-container {
+    grid-area: title-content;
+    justify-content: flex-start;
+    border: none;
+  }
+
+  .flex-container h2 {
+    margin: 3rem 1rem 1.5rem 1rem;
+  }
+
+  .page-section p {
+    grid-area: content;
+    font-size: 0.8rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  .work-img-container {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+            "main-img" 
+            "small-img-one"   "small-img-two" 
+            "small-img-three" "small-img-four";
+    align-items: stretch;
+  }
+
+  #main-img {
+    height: auto;
+    width: auto;
+  }
+
+  .grid-img-item {
+    height: auto;
+    width: auto;
+  }
+
+  #contact {
+    margin-bottom: 1.5rem;
+  }
+
+  .footer-container {
+    grid-template-columns: 1fr 1fr;
+    margin-left: 0rem;
+  }
+
+  .footer-container a {
+    text-decoration: underline;
+    text-decoration-color: orangered;
+  }
+
+}
+
+/* ----------------small phone-------------------- */
+
+@media only screen and (max-width: 390px) {
+  .header-title-container {
+    width: 100%;
+  }
+
+  .header h1 {
+    font-size: 2.4rem;
+    margin: auto;
+    width: 60%;
+  }
+
+  .banner {
+    height: 6rem;
+  }
+
+  .banner h2 {
     display: none;
   }
 }
